@@ -1,0 +1,20 @@
+-- This is a generated file
+-- Do not modify it, unless you know exactly what you are doing
+
+ModId = "952d83cb-5708-458f-a80c-bea717d5f943"
+
+IdMap = {
+	{ "FERRY_BRIDGE", "BUILDING", "e4ed266b-69d9-439f-9665-bfce797316cf" },
+	{ "models/woodplanksBrown.png", "", "680a79f6-f6ee-4005-9c05-57876e6fe1fa" },
+	{ "FERRY_BRIDGE_START_PART", "BUILDING_PART", "f027cf15-5066-41de-8bca-8f9bfa206eaa" },
+	{ "FERRY_BRIDGE_CENTER_PART", "BUILDING_PART", "4985018a-c14b-4ca9-a6eb-2987dd03e8d6" },
+	{ "models/ferryBridge.fbx", "", "511ad885-191d-46a8-802f-946a0aba7503" },
+	{ "FERRY_BRIDGE_END_PART", "BUILDING_PART", "2d3cfc63-07e7-45f2-971b-2ad524f61e1e" },
+	{ "models/Transparent.png", "", "80467016-44bb-4c31-956d-67ffde41aa15" },
+	{ "FERRY_BRIDGE_CORE_PART", "BUILDING_PART", "deb7fb59-bb15-4adc-bf4a-893e7fd13b27" },
+	{ "FUNCTION_BRIDGE_ID", "BUILDING_FUNCTION", "2aad4ab0-0183-499d-8e3a-0f308639a373" },
+	{ "models/roofTilesBeige.png", "", "79116c59-59e3-4831-aab1-c085f46ae2d4" },
+	{ "models/woodBrownWorn.png", "", "5111e4af-1c8e-40dd-a051-cc65a6a9ffef" },
+	{ "models/woodBrown.png", "", "036c8895-4fff-4804-8f5a-c0bb3a255cd1" },
+	{ "models/woodBrownDark.png", "", "87815f6f-74e7-4d62-8951-514bfd04a06f" },
+}
