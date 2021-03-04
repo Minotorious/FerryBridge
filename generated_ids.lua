@@ -17,4 +17,10 @@ IdMap = {
 	{ "models/woodBrownWorn.png", "", "5111e4af-1c8e-40dd-a051-cc65a6a9ffef" },
 	{ "models/woodBrown.png", "", "036c8895-4fff-4804-8f5a-c0bb3a255cd1" },
 	{ "models/woodBrownDark.png", "", "87815f6f-74e7-4d62-8951-514bfd04a06f" },
+	{ "FERRY_BRIDGE_CREATIVE", "BUILDING", "c4dcb0ce-ab0a-495a-b009-46095c37e4ab" },
+	{ "FERRY_BRIDGE_CREATIVE_START_PART", "BUILDING_PART", "5f4b9654-38ed-418d-834b-ad06bc4d523a" },
+	{ "FERRY_BRIDGE_CREATIVE_CENTER_PART", "BUILDING_PART", "dc341959-240c-4cf4-9ff7-a6bd27e0bf1c" },
+	{ "FERRY_BRIDGE_CREATIVE_END_PART", "BUILDING_PART", "8cd41bbc-02c9-4d95-a234-868da188770e" },
+	{ "FERRY_BRIDGE_CREATIVE_CORE_PART", "BUILDING_PART", "19c3ce9a-5dc0-48da-81ae-7fd031d5011a" },
+	{ "models/ferryBridgeCreative.fbx", "", "557d1126-97b5-40a6-960d-f8beffd6bcc0" },
 }

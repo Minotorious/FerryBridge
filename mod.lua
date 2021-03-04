@@ -19,3 +19,4 @@ local ferryBridge = foundation.createMod();
 --[[-------------------------------- DO FILES ---------------------------------]]--
 
 ferryBridge:dofile("scripts/ferryBridge.lua")
+--ferryBridge:dofile("scripts/ferryBridgeCreative.lua")

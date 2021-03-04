@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<meta id="557d1126-97b5-40a6-960d-f8beffd6bcc0">
+	<meta id="5a47738b-a337-45d5-8606-05565283c518" type="group" folder="true" name="Materials">
+		<meta id="5ec49408-2a68-4bf4-b4cb-039b6fc23361" name="Material.Black"/>
+		<meta id="93828150-591a-4ce1-b0a3-056b6eb9930e" name="Material.Transparent"/>
+	</meta>
+	<meta id="7b374b4b-fe1b-4b77-8a4c-6868a27bfd1e" type="group" folder="true" name="Meshes">
+		<meta id="eddafb09-4a56-4e71-9a12-ffa33370a740" name="Door.001_Material.Black"/>
+		<meta id="4ba54818-2a36-4e1e-a46d-8dd7a223355e" name="Door_Material.Black"/>
+		<meta id="22466135-7132-4d91-bae0-cd02a41f0cc8" name="Cube.002_Material.Transparent"/>
+	</meta>
+	<meta id="97607a78-2809-48dc-b12b-138cf649141c" name="Prefab">
+		<meta id="f213c709-8f84-45e2-b17f-e7ef79149cdb" name="StartPart">
+			<meta id="7763cb8a-4cb5-4a46-b065-6f3e04207d88" name="Attach_Start_Left_BridgeEnd"/>
+			<meta id="5b34db33-7db2-41cf-becd-10879dff972f" name="Attach_Start_Right"/>
+			<meta id="708a7db1-1cb9-431c-8200-e445c49f4fc8" name="Door"/>
+		</meta>
+		<meta id="d78d5765-9876-4dae-9680-a88227fc711f" name="EndPart">
+			<meta id="25d53553-2c98-4100-9036-74ce6c53b7c7" name="Attach_End_Left"/>
+			<meta id="9edcb705-15d9-482e-99e6-fbb3a7cf8b3c" name="Attach_End_Right_BridgeEnd"/>
+			<meta id="5dd4347c-b5d4-4bab-96c7-0edf68a8bc02" name="Door.001"/>
+		</meta>
+		<meta id="03e05819-8c3e-4a17-97be-b8414376639e" name="CenterPart">
+			<meta id="6695c1d0-c2f4-4cbd-9a74-ce8694d47304" name="Attach_Center_Left"/>
+			<meta id="e0ddedb4-f922-4752-900c-68ca3874c5af" name="Attach_Center_Right"/>
+			<meta id="35a803d7-f40c-4a42-add6-0fd004f1080c" name="Cube.002"/>
+		</meta>
+	</meta>
+</meta>
+<importer type="GamCFbxImporterConfiguration">
+	<Md5Checksum value="3c20a5e4aa009b155bff7053f22af349"/>
+	<Scale value="0.01"/>
+	<PatchMeshOffset value="true"/>
+	<UniqueNodeName value="false"/>
+	<ImportAnimation value="false"/>
+	<IgnoreRootAnimation value="false"/>
+	<FlipXAxis value="true"/>
+	<MergeDuplicateMeshes value="true"/>
+	<GenerateLod value="false"/>
+	<OverrideExistingLod value="false"/>
+	<NodeConfig type="GenCFbxNodeConfig">
+		<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+		<ChildList>
+			<Item type="GenCFbxNodeConfig">
+				<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+				<ChildList>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Attach_Start_Left_BridgeEnd"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Attach_Start_Right"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Door"/>
+					</Item>
+				</ChildList>
+				<NodeName value="StartPart"/>
+			</Item>
+			<Item type="GenCFbxNodeConfig">
+				<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+				<ChildList>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Attach_End_Left"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Attach_End_Right_BridgeEnd"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Door.001"/>
+					</Item>
+				</ChildList>
+				<NodeName value="EndPart"/>
+			</Item>
+			<Item type="GenCFbxNodeConfig">
+				<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+				<ChildList>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Attach_Center_Left"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Attach_Center_Right"/>
+					</Item>
+					<Item type="GenCFbxNodeConfig">
+						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+						<ChildList/>
+						<NodeName value="Cube.002"/>
+					</Item>
+				</ChildList>
+				<NodeName value="CenterPart"/>
+			</Item>
+		</ChildList>
+		<NodeName value="Prefab"/>
+	</NodeConfig>
+	<MaterialList>
+		<Item type="GamCDataMaterialPair">
+			<MaterialGuid value="5ec49408-2a68-4bf4-b4cb-039b6fc23361"/>
+			<MaterialName value="Material.Black"/>
+		</Item>
+		<Item type="GamCDataMaterialPair">
+			<MaterialGuid value="93828150-591a-4ce1-b0a3-056b6eb9930e"/>
+			<MaterialName value="Material.Transparent"/>
+		</Item>
+	</MaterialList>
+</importer>
+
