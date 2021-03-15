@@ -23,4 +23,5 @@ IdMap = {
 	{ "FERRY_BRIDGE_CREATIVE_END_PART", "BUILDING_PART", "8cd41bbc-02c9-4d95-a234-868da188770e" },
 	{ "FERRY_BRIDGE_CREATIVE_CORE_PART", "BUILDING_PART", "19c3ce9a-5dc0-48da-81ae-7fd031d5011a" },
 	{ "models/ferryBridgeCreative.fbx", "", "557d1126-97b5-40a6-960d-f8beffd6bcc0" },
+	{ "FERRY_BRIDGE_RAFT_PART", "BUILDING_PART", "28750003-f820-49ae-833b-fea26b71f0cf" },
 }

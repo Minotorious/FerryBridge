@@ -35,7 +35,6 @@ ferryBridge:registerAssetProcessor("models/ferryBridgeCreative.fbx", { DataType 
 ferryBridge:registerPrefabComponent("models/ferryBridgeCreative.fbx/Prefab/StartPart/Door", { DataType = "COMP_GROUNDED" })
 ferryBridge:registerPrefabComponent("models/ferryBridgeCreative.fbx/Prefab/EndPart/Door.001", { DataType = "COMP_GROUNDED" })
 
-
 ferryBridge:configurePrefabFlagList("models/ferryBridgeCreative.fbx/Prefab/StartPart", { "BRIDGE" })
 ferryBridge:configurePrefabFlagList("models/ferryBridgeCreative.fbx/Prefab/CenterPart", { "BRIDGE" })
 ferryBridge:configurePrefabFlagList("models/ferryBridgeCreative.fbx/Prefab/EndPart", { "BRIDGE" })
@@ -49,6 +48,12 @@ ferryBridge:register({
 	Description = "FERRY_BRIDGE_CREATIVE_DESC",
 	BuildingType = "MONUMENT",
 	AssetCoreBuildingPart = "FERRY_BRIDGE_CREATIVE_CORE_PART",
+    BuildingPartSetList = {
+        {
+            Name = "FERRY_BRIDGE_RAFT_CATEGORY",
+            BuildingPartList = { "FERRY_BRIDGE_RAFT_PART" }
+        }
+    },
 	IsDestructible = true,
 	IsEditable = true,
 	IsClearTrees = true

@@ -334,6 +334,7 @@ ferryBridge:registerPrefabComponent("models/ferryBridge.fbx/Prefab/EndPart/DoorB
 ferryBridge:registerPrefabComponent("models/ferryBridge.fbx/Prefab/EndPart/DoorRaft.001", { DataType = "COMP_GROUNDED", GroundToWater = true })
 ferryBridge:registerPrefabComponent("models/ferryBridge.fbx/Prefab/EndPart/DoorRaftBlack.001", { DataType = "COMP_GROUNDED", GroundToWater = true })
 
+ferryBridge:registerPrefabComponent("models/ferryBridge.fbx/Prefab/RaftPart", { DataType = "COMP_GROUNDED", GroundToWater = true })
 
 ferryBridge:configurePrefabFlagList("models/ferryBridge.fbx/Prefab/StartPart", { "BRIDGE" })
 ferryBridge:configurePrefabFlagList("models/ferryBridge.fbx/Prefab/CenterPart", { "BRIDGE" })
@@ -349,6 +350,12 @@ ferryBridge:register({
 	Description = "FERRY_BRIDGE_DESC",
 	BuildingType = "MONUMENT",
 	AssetCoreBuildingPart = "FERRY_BRIDGE_CORE_PART",
+    BuildingPartSetList = {
+        {
+            Name = "FERRY_BRIDGE_RAFT_CATEGORY",
+            BuildingPartList = { "FERRY_BRIDGE_RAFT_PART" }
+        }
+    },
 	IsDestructible = true,
 	IsEditable = true,
 	IsClearTrees = true
@@ -370,7 +377,7 @@ ferryBridge:register({
 				Type = { DEFAULT = true, GRASS_CLEAR = true }
 			}
 		}
-	},
+	}
 })
 
 ferryBridge:register({
@@ -388,7 +395,7 @@ ferryBridge:register({
 				--Type = { DEFAULT = true }
 			}
 		}
-	},
+	}
 })
 
 ferryBridge:register({
@@ -407,7 +414,7 @@ ferryBridge:register({
 				Type = { DEFAULT = true, GRASS_CLEAR = true }
 			}
 		}
-	},
+	}
 })
 
 ferryBridge:register({
@@ -429,6 +436,19 @@ ferryBridge:register({
 	BuildingFunction = "FUNCTION_BRIDGE_ID"
 })
 
+ferryBridge:register({
+	DataType = "BUILDING_PART",
+	Id = "FERRY_BRIDGE_RAFT_PART",
+    Name = "FERRY_BRIDGE_RAFT_PART_NAME",
+	IsShowInUi = true,
+	ConstructorData = {
+		DataType = "BUILDING_CONSTRUCTOR_DEFAULT",
+		CoreObjectPrefab = "PREFAB_FERRY_BRIDGE_RAFT_PART"
+	},
+    BuildingZone = {
+		ZoneEntryList = {}
+	},
+})
 
 --[[------------------------- JOBS & BUILDING FUNCTIONS -----------------------]]--
 
