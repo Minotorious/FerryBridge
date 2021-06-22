@@ -46,7 +46,7 @@ ferryBridge:register({
 	Id = "FERRY_BRIDGE_CREATIVE",
 	Name = "FERRY_BRIDGE_CREATIVE_NAME",
 	Description = "FERRY_BRIDGE_CREATIVE_DESC",
-	BuildingType = "MONUMENT",
+	BuildingType = "TRANSPORTATION",
 	AssetCoreBuildingPart = "FERRY_BRIDGE_CREATIVE_CORE_PART",
     BuildingPartSetList = {
         {

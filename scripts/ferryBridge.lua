@@ -348,7 +348,7 @@ ferryBridge:register({
 	Id = "FERRY_BRIDGE",
 	Name = "FERRY_BRIDGE_NAME",
 	Description = "FERRY_BRIDGE_DESC",
-	BuildingType = "MONUMENT",
+	BuildingType = "TRANSPORTATION",
 	AssetCoreBuildingPart = "FERRY_BRIDGE_CORE_PART",
     BuildingPartSetList = {
         {
