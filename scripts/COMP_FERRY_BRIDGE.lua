@@ -43,7 +43,7 @@ function COMP_FERRY_BRIDGE:raycast(pos)
     end
 end
 
-function COMP_FERRY_BRIDGE:init()
+function COMP_FERRY_BRIDGE:onEnabled()
     local building = self:getOwner():findFirstObjectWithComponentUp("COMP_BUILDING")
     local parts = building:getBuildingPartList()
     local pos1 = nil
