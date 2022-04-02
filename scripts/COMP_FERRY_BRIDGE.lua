@@ -133,12 +133,31 @@ function COMP_FERRY_BRIDGE:update()
         )
         
         for i, entry in pairs(self.ActiveAgents) do
-            local agentPos = entry:getGlobalPosition()
-            
-            local raftDistance1 = math.sqrt( (self.posEnd[1] - agentPos.x)^2 + (self.posEnd[2] - agentPos.y)^2 + (self.posEnd[3] - agentPos.z)^2 )
-            local raftDistance2 = math.sqrt( (self.posStart[1] - agentPos.x)^2 + (self.posStart[2] - agentPos.y)^2 + (self.posStart[3] - agentPos.z)^2 )
-            
-            if raftDistance1 > self.waterDistance or raftDistance2 > self.waterDistance then
+            if entry:is("GAME_OBJECT") then
+                local agentPos = entry:getGlobalPosition()
+                
+                local raftDistance1 = math.sqrt( (self.posEnd[1] - agentPos.x)^2 + (self.posEnd[2] - agentPos.y)^2 + (self.posEnd[3] - agentPos.z)^2 )
+                local raftDistance2 = math.sqrt( (self.posStart[1] - agentPos.x)^2 + (self.posStart[2] - agentPos.y)^2 + (self.posStart[3] - agentPos.z)^2 )
+                
+                if raftDistance1 > self.waterDistance or raftDistance2 > self.waterDistance then
+                    entry:forEachChild(
+                        function(child)
+                            if child.Name == "RaftPart" then
+                                child:destroy()
+                                self.ActiveAgents[i] = nil
+                            end
+                        end
+                    )
+                end
+            end
+        end
+    end
+end
+
+function COMP_FERRY_BRIDGE:onFinalize(isClearingLevel)
+    if not isClearingLevel then
+        for i, entry in pairs(self.ActiveAgents) do
+            if entry:is("GAME_OBJECT") then
                 entry:forEachChild(
                     function(child)
                         if child.Name == "RaftPart" then
@@ -148,21 +167,6 @@ function COMP_FERRY_BRIDGE:update()
                     end
                 )
             end
-        end
-    end
-end
-
-function COMP_FERRY_BRIDGE:onDestroy(isClearingLevel)
-    if not isClearingLevel then
-        for i, entry in pairs(self.ActiveAgents) do
-            entry:forEachChild(
-                function(child)
-                    if child.Name == "RaftPart" then
-                        child:destroy()
-                        self.ActiveAgents[i] = nil
-                    end
-                end
-            )
         end
     end
 end
