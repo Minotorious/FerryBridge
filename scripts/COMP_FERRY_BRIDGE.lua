@@ -28,14 +28,14 @@ end
 function COMP_FERRY_BRIDGE:raycast(pos)
     local raycastResultWater = {}
     local raycastResultTerrain = {}
-    local FromPosition = { pos[1], pos[2]+100, pos[3] }
-    local ToPosition = { pos[1], pos[2]-100, pos[3] }
+    local fromPosition = { pos[1], pos[2]+100, pos[3] }
+    local toPosition = { pos[1], pos[2]-100, pos[3] }
     local flagWater = bit.bor(bit.lshift(1, OBJECT_FLAG.WATER:toNumber()))
     local flagTerrain = bit.bor(bit.lshift(1, OBJECT_FLAG.TERRAIN:toNumber()))
-    
-    self:getLevel():rayCast(FromPosition, ToPosition, raycastResultWater, flagWater)
-    self:getLevel():rayCast(FromPosition, ToPosition, raycastResultTerrain, flagTerrain)
-    
+
+    self:getLevel():rayCast(fromPosition, toPosition, raycastResultWater, flagWater)
+    self:getLevel():rayCast(fromPosition, toPosition, raycastResultTerrain, flagTerrain)
+
     if raycastResultWater.Position.y > raycastResultTerrain.Position.y then
         return true, raycastResultWater.Position.y
     else
@@ -133,7 +133,7 @@ function COMP_FERRY_BRIDGE:update()
         )
         
         for i, entry in pairs(self.ActiveAgents) do
-            if entry:is("GAME_OBJECT") then
+            if entry ~= nil and entry:is("GAME_OBJECT") then
                 local agentPos = entry:getGlobalPosition()
                 
                 local raftDistance1 = math.sqrt( (self.posEnd[1] - agentPos.x)^2 + (self.posEnd[2] - agentPos.y)^2 + (self.posEnd[3] - agentPos.z)^2 )
@@ -157,7 +157,7 @@ end
 function COMP_FERRY_BRIDGE:onFinalize(isClearingLevel)
     if not isClearingLevel then
         for i, entry in pairs(self.ActiveAgents) do
-            if entry:is("GAME_OBJECT") then
+            if entry ~= nil and entry:is("GAME_OBJECT") then
                 entry:forEachChild(
                     function(child)
                         if child.Name == "RaftPart" then
