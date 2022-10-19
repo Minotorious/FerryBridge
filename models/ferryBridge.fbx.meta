@@ -13,8 +13,6 @@
 		<meta id="3dfbd430-2123-41c9-a3b5-2ad6eb80dd11" name="DoorRaft_Material.WoodBrownDark"/>
 		<meta id="ea411769-31df-4a86-93f8-923d2706c675" name="Cube.015_Material.RoofTilesBeige"/>
 		<meta id="a130a4e1-4b6c-48b3-91ab-c69af1518db3" name="Door_Material.WoodBrownDark"/>
-		<meta id="ee860d68-0803-4d94-bfb3-fcae38f60694" name="DoorBlack_Material.Black"/>
-		<meta id="50a10f69-9f30-4102-bcf5-511f8a584c5a" name="DoorRaftBlack_Material.Black"/>
 		<meta id="cde7e0e9-2195-44e9-920f-857f754267b9" name="Cube.019_Material.WoodBrownDark"/>
 		<meta id="4ca415a1-8014-4520-86c5-eedeb5f5895d" name="Cube.017_Material.WoodBrown"/>
 		<meta id="3826ff25-b499-405c-b393-c4f7acffcdd9" name="Cube.021_Material.WoodBrown"/>
@@ -27,15 +25,12 @@
 		<meta id="538938df-a450-4ae7-8b87-b8f6e2a0817f" name="DoorRaft.001_Material.WoodBrownDark"/>
 		<meta id="e61f278d-66c8-44db-a815-d43213b7ec4c" name="Cube.030_Material.RoofTilesBeige"/>
 		<meta id="7b2052fd-d470-45eb-9d37-ee68b433a1c5" name="Door.001_Material.WoodBrownDark"/>
-		<meta id="f699e291-5c5e-41a2-a37f-83c4a2267c93" name="DoorBlack.001_Material.Black"/>
-		<meta id="db3ac028-2070-4dfa-815c-9578ab9d6c76" name="DoorRaftBlack.001_Material.Black"/>
 		<meta id="b95daa7c-2be2-457b-975c-840ec9b68b7d" name="Cube.034_Material.WoodBrown"/>
 		<meta id="a9dfc302-c4be-4c55-8262-81c4e1d2979e" name="Cube.035_Material.WoodBrown"/>
 		<meta id="f4fc49bb-f9ed-4126-8fbe-1a9095655fe1" name="Cube.036_Material.WoodBrown"/>
 		<meta id="f97162bb-78aa-4b5b-b151-8ca41a251035" name="Cube.037_Material.WoodBrown"/>
 		<meta id="2d9bd6f9-deba-4cb5-96e0-c130e9ec02da" name="Cube.038_Material.WoodBrown"/>
 		<meta id="416e5a54-c5e1-42f4-98e8-2c93556e2a1c" name="Cube.043_Material.RoofTilesBeige"/>
-		<meta id="c8f32ee0-510c-4558-b9ff-2a4488eb80cf" name="Cube.002_Material.Transparent"/>
 		<meta id="951ac08f-1d3c-441c-9ee7-06d417ec1154" name="Cube.005"/>
 		<meta id="d1aeb16b-6914-40f2-81ff-d8f7b52201c3" name="Cube.007"/>
 		<meta id="4ce25ab3-8fc4-4b18-85ed-1f32ffb1be13" name="Circle_Material.WoodBrownDark"/>
@@ -52,18 +47,26 @@
 		<meta id="e7991b80-278c-4837-96cb-9612e41c88e8" name="Cube.010_Material.WoodplanksBrown"/>
 		<meta id="5946a42b-d8fa-4c9f-a9f6-6fafcf306f1b" name="Cube.016_Material.WoodplanksBrown"/>
 		<meta id="10560905-2d5b-4d67-abbd-5428362d8cca" name="Cube.027_Material.WoodBrownDark"/>
+		<meta id="8086b2b5-6216-482d-8d07-9264574028b3" name="DoorRaft_Material.Black"/>
+		<meta id="1d437fe7-0a3a-4aef-bb4b-36ae9e2a241a" name="Door_Material.Black"/>
+		<meta id="8e67402d-8c24-4382-812b-fd91437a3673" name="DoorRaft.001_Material.Black"/>
+		<meta id="dcbf0677-e8dd-409a-942b-1583aa0af962" name="Door.001_Material.Black"/>
 	</meta>
 	<meta id="d7ca5412-ea13-44cb-b908-71ffaa3ec29f" name="Prefab">
 		<meta id="e0a8064b-6bc8-4c71-beec-4cd52a10dfca" name="StartPart">
 			<meta id="e9b1e2e9-8ee2-47f5-8191-31dcbcfb333f" name="Attach_Start_Left_BridgeEnd"/>
 			<meta id="702377ef-4dfc-4095-9a77-81c65cbc9a84" name="Attach_Start_Right"/>
-			<meta id="c20b8e18-7d3b-43ea-90fc-2e8215ae813e" name="DoorRaft"/>
+			<meta id="c20b8e18-7d3b-43ea-90fc-2e8215ae813e" name="DoorRaft">
+				<meta id="3f93ecf7-1570-463a-afca-2119ddb3265a" name="DoorRaft_0"/>
+				<meta id="c32d6afe-b1f0-4710-ba3d-2485698a4206" name="DoorRaft_1"/>
+			</meta>
 			<meta id="0dbd76a0-df6a-46fb-b822-fc73cf21d3b9" name="Cube.010"/>
 			<meta id="4d023797-787c-4797-af97-2ec73da593b7" name="Cube.015"/>
 			<meta id="9e958590-502f-4610-ba41-50d6f0b72799" name="Cube.016"/>
-			<meta id="51c0f09e-dd52-4ad8-b2e5-e2c07c0bd9db" name="Door"/>
-			<meta id="c2aa66c9-6321-4aa6-88b5-71cc16c5993f" name="DoorBlack"/>
-			<meta id="29ad547c-a179-4a03-80c8-11b09fa2732f" name="DoorRaftBlack"/>
+			<meta id="51c0f09e-dd52-4ad8-b2e5-e2c07c0bd9db" name="Door">
+				<meta id="d29890fd-7bda-402f-aa25-cb1b6c66bac2" name="Door_0"/>
+				<meta id="d368d052-9eb9-4851-b579-5891fee01938" name="Door_1"/>
+			</meta>
 			<meta id="144ef6bf-4992-430e-96b9-8ff1a72d37af" name="Cube.019"/>
 			<meta id="1d2dd04a-92f2-44f5-ba29-9cbb7ccadb61" name="Cube.020"/>
 			<meta id="1900a681-1b45-4a64-93fe-053d0b956513" name="Cube.017"/>
@@ -81,13 +84,17 @@
 		<meta id="b9fe5bd6-8f21-4284-a5f6-7fdc101a5121" name="EndPart">
 			<meta id="814dd1f7-c621-41d5-8220-ea16beeb3096" name="Attach_End_Left"/>
 			<meta id="439e750e-c2d4-4b0c-b963-22e2d985bd12" name="Attach_End_Right_BridgeEnd"/>
-			<meta id="ba19808b-1483-48bb-bce4-f98f54db1a55" name="DoorRaft.001"/>
+			<meta id="ba19808b-1483-48bb-bce4-f98f54db1a55" name="DoorRaft.001">
+				<meta id="a0d490ac-5491-4e24-b344-84b07e1a36b6" name="DoorRaft.001_0"/>
+				<meta id="0b8089f7-686d-48ed-9e2f-58801694326c" name="DoorRaft.001_1"/>
+			</meta>
 			<meta id="906e8a5e-ee1a-410b-ad35-0144bd671b32" name="Cube.029"/>
 			<meta id="a32e67ce-8cf7-4f8d-9c49-3a12cf72cbc8" name="Cube.030"/>
 			<meta id="5074c79e-852b-4108-92bb-a9596fc2c6f9" name="Cube.031"/>
-			<meta id="0056c27e-93fa-4d09-aece-665efb71bc4c" name="Door.001"/>
-			<meta id="c0fa4d7d-6536-460e-8cd1-f3c42baf7729" name="DoorBlack.001"/>
-			<meta id="c74b5863-beed-460e-bd1d-16129693336f" name="DoorRaftBlack.001"/>
+			<meta id="0056c27e-93fa-4d09-aece-665efb71bc4c" name="Door.001">
+				<meta id="3b42d3a3-ba58-4f5e-ae8e-3d4e8203a2f2" name="Door.001_0"/>
+				<meta id="2e7307da-f56a-4e91-b526-589602378662" name="Door.001_1"/>
+			</meta>
 			<meta id="b5a7a139-d67b-4f1d-9b8d-b1a656a947fb" name="Cube.032"/>
 			<meta id="c6b29592-4475-4438-9bc2-a3c5230c4f8f" name="Cube.033"/>
 			<meta id="de3b1a92-f18f-4985-8a84-06f0fa9e12f1" name="Cube.034"/>
@@ -102,7 +109,6 @@
 			<meta id="3ba6d95d-85e0-4261-8219-1f5ce9051488" name="Cube.009"/>
 		</meta>
 		<meta id="e0e2d1a8-13d5-4608-9982-7b0a970a300c" name="CenterPart">
-			<meta id="2790d796-c0ae-48c9-93e7-72896022ab0e" name="Cube.002"/>
 			<meta id="b99893e4-fc6f-4aea-b4fb-a728834d42f4" name="Attach_Center_Left"/>
 			<meta id="a0e3edee-c4c3-4355-9341-be01407afd97" name="Attach_Center_Right"/>
 		</meta>
@@ -145,7 +151,7 @@
 	</meta>
 </meta>
 <importer type="GamCFbxImporterConfiguration">
-	<Md5Checksum value="4c14c01e52c638e71fa87d507cec671c"/>
+	<Md5Checksum value="e0960b9a786284b8bfaf3005624414c6"/>
 	<ModelVersion value="30"/>
 	<Scale value="0.01"/>
 	<PatchMeshOffset value="true"/>
@@ -153,6 +159,7 @@
 	<ImportAnimation value="false"/>
 	<IgnoreRootAnimation value="false"/>
 	<FlipXAxis value="true"/>
+	<ZUpSource value="false"/>
 	<MergeDuplicateMeshes value="true"/>
 	<GenerateLod value="false"/>
 	<OverrideExistingLod value="false"/>
@@ -174,7 +181,18 @@
 					</Item>
 					<Item type="GenCFbxNodeConfig">
 						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
-						<ChildList/>
+						<ChildList>
+							<Item type="GenCFbxNodeConfig">
+								<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+								<ChildList/>
+								<NodeName value="DoorRaft_0"/>
+							</Item>
+							<Item type="GenCFbxNodeConfig">
+								<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+								<ChildList/>
+								<NodeName value="DoorRaft_1"/>
+							</Item>
+						</ChildList>
 						<NodeName value="DoorRaft"/>
 					</Item>
 					<Item type="GenCFbxNodeConfig">
@@ -194,18 +212,19 @@
 					</Item>
 					<Item type="GenCFbxNodeConfig">
 						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
-						<ChildList/>
+						<ChildList>
+							<Item type="GenCFbxNodeConfig">
+								<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+								<ChildList/>
+								<NodeName value="Door_0"/>
+							</Item>
+							<Item type="GenCFbxNodeConfig">
+								<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+								<ChildList/>
+								<NodeName value="Door_1"/>
+							</Item>
+						</ChildList>
 						<NodeName value="Door"/>
-					</Item>
-					<Item type="GenCFbxNodeConfig">
-						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
-						<ChildList/>
-						<NodeName value="DoorBlack"/>
-					</Item>
-					<Item type="GenCFbxNodeConfig">
-						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
-						<ChildList/>
-						<NodeName value="DoorRaftBlack"/>
 					</Item>
 					<Item type="GenCFbxNodeConfig">
 						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
@@ -290,7 +309,18 @@
 					</Item>
 					<Item type="GenCFbxNodeConfig">
 						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
-						<ChildList/>
+						<ChildList>
+							<Item type="GenCFbxNodeConfig">
+								<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+								<ChildList/>
+								<NodeName value="DoorRaft.001_0"/>
+							</Item>
+							<Item type="GenCFbxNodeConfig">
+								<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+								<ChildList/>
+								<NodeName value="DoorRaft.001_1"/>
+							</Item>
+						</ChildList>
 						<NodeName value="DoorRaft.001"/>
 					</Item>
 					<Item type="GenCFbxNodeConfig">
@@ -310,18 +340,19 @@
 					</Item>
 					<Item type="GenCFbxNodeConfig">
 						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
-						<ChildList/>
+						<ChildList>
+							<Item type="GenCFbxNodeConfig">
+								<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+								<ChildList/>
+								<NodeName value="Door.001_0"/>
+							</Item>
+							<Item type="GenCFbxNodeConfig">
+								<LodConfig value="00000000-0000-0000-0000-000000000000"/>
+								<ChildList/>
+								<NodeName value="Door.001_1"/>
+							</Item>
+						</ChildList>
 						<NodeName value="Door.001"/>
-					</Item>
-					<Item type="GenCFbxNodeConfig">
-						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
-						<ChildList/>
-						<NodeName value="DoorBlack.001"/>
-					</Item>
-					<Item type="GenCFbxNodeConfig">
-						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
-						<ChildList/>
-						<NodeName value="DoorRaftBlack.001"/>
 					</Item>
 					<Item type="GenCFbxNodeConfig">
 						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
@@ -389,11 +420,6 @@
 			<Item type="GenCFbxNodeConfig">
 				<LodConfig value="00000000-0000-0000-0000-000000000000"/>
 				<ChildList>
-					<Item type="GenCFbxNodeConfig">
-						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
-						<ChildList/>
-						<NodeName value="Cube.002"/>
-					</Item>
 					<Item type="GenCFbxNodeConfig">
 						<LodConfig value="00000000-0000-0000-0000-000000000000"/>
 						<ChildList/>

@@ -68,14 +68,14 @@ function COMP_FERRY_BRIDGE:onEnabled()
 
         end
     end
-    
+
     local posNew = { 0, 0, 0 }
     local waterFound = false
     for i=0,1,0.01 do
         posNew[1] = (1-i)*pos1.x + i*pos2.x
         posNew[2] = (1-i)*pos1.y + i*pos2.y
         posNew[3] = (1-i)*pos1.z + i*pos2.z
-        
+
         local waterCheck, yVal = self:raycast(posNew)
         if waterFound == false then
             if waterCheck == true then
@@ -89,7 +89,7 @@ function COMP_FERRY_BRIDGE:onEnabled()
             end
         end
     end
-    
+
     if self.posStart ~= nil and self.posEnd ~= nil then
         self.waterDistance = 1.05 * math.sqrt( (self.posStart[1] - self.posEnd[1])^2 + (self.posStart[2] - self.posEnd[2])^2 + (self.posStart[3] - self.posEnd[3])^2 )
     end
@@ -106,7 +106,7 @@ function COMP_FERRY_BRIDGE:update()
                 local agentPos = agent:getOwner():getGlobalPosition()
                 local distance1 = math.sqrt( (self.posStart[1] - agentPos.x)^2 + (self.posStart[2] - agentPos.y)^2 + (self.posStart[3] - agentPos.z)^2 )
                 local distance2 = math.sqrt( (self.posEnd[1] - agentPos.x)^2 + (self.posEnd[2] - agentPos.y)^2 + (self.posEnd[3] - agentPos.z)^2 )
-                
+
                 if distance1 + distance2 <= self.waterDistance then
                     local villager = agent:getOwner():getComponent("COMP_VILLAGER")
                     if villager ~= nil then
@@ -119,7 +119,7 @@ function COMP_FERRY_BRIDGE:update()
                             break
                         end
                     end
-                    
+
                     if found == false then
                         if distance1 < 2 or distance2 < 2 then
                             local orientation = agent:getOwner():getGlobalOrientation()
@@ -131,14 +131,14 @@ function COMP_FERRY_BRIDGE:update()
                 end
             end
         )
-        
+
         for i, entry in pairs(self.ActiveAgents) do
             if entry ~= nil and entry:is("GAME_OBJECT") then
                 local agentPos = entry:getGlobalPosition()
-                
+
                 local raftDistance1 = math.sqrt( (self.posEnd[1] - agentPos.x)^2 + (self.posEnd[2] - agentPos.y)^2 + (self.posEnd[3] - agentPos.z)^2 )
                 local raftDistance2 = math.sqrt( (self.posStart[1] - agentPos.x)^2 + (self.posStart[2] - agentPos.y)^2 + (self.posStart[3] - agentPos.z)^2 )
-                
+
                 if raftDistance1 > self.waterDistance or raftDistance2 > self.waterDistance then
                     entry:forEachChild(
                         function(child)

@@ -45,14 +45,13 @@ ferryBridge:registerAsset({
     Id = "FERRY_BRIDGE_CREATIVE",
     Name = "FERRY_BRIDGE_CREATIVE_NAME",
     Description = "FERRY_BRIDGE_CREATIVE_DESC",
-    BuildingType = "TRANSPORTATION",
+    BuildingType = BUILDING_TYPE.TRANSPORTATION,
     AssetCoreBuildingPart = "FERRY_BRIDGE_CREATIVE_CORE_PART",
-    BuildingPartSetList = {
-        {
-            Name = "FERRY_BRIDGE_RAFT_CATEGORY",
-            BuildingPartList = { "FERRY_BRIDGE_RAFT_PART" }
-        }
+    AssetBuildingPartList = {
+        "FERRY_BRIDGE_RAFT_PART"
     },
+    IsManuallyUnlocked = true,
+    IsDestructible = true,
     IsEditable = true,
     IsClearTrees = true
 })
@@ -94,6 +93,7 @@ ferryBridge:registerAsset({
     Id = "FERRY_BRIDGE_CREATIVE_CORE_PART",
     Name = "FERRY_BRIDGE_CREATIVE_CORE_PART_NAME",
     Description = "FERRY_BRIDGE_CREATIVE_CORE_PART_DESC",
+    Category = BUILDING_PART_TYPE.CORE,
     ConstructorData = {
         DataType = "BUILDING_CONSTRUCTOR_BRIDGE",
         StartPart = "FERRY_BRIDGE_CREATIVE_START_PART",
@@ -102,9 +102,25 @@ ferryBridge:registerAsset({
             "FERRY_BRIDGE_CREATIVE_CENTER_PART"
         },
     },
-    BuildingFunction = "FUNCTION_BRIDGE_ID"
+    BuildingFunction = "BUILDING_FUNCTION_FERRY_BRIDGE"
 })
 
+--[[------------------------------- UNLOCKABLES -------------------------------]]--
+
+ferryBridge:overrideAsset({
+    Id = "UNLOCKABLE_COMMON_BRIDGE_WOODEN",
+    ActionList = {
+        Action = "APPEND",
+        {
+            DataType = "GAME_ACTION_UNLOCK_BUILDING_LIST",
+            BuildingProgressData = {
+                AssetBuildingList = {
+                    "FERRY_BRIDGE_CREATIVE"
+                }
+            }
+        }
+    }
+})
 
 --[[------------------------- JOBS & BUILDING FUNCTIONS -----------------------]]--
 

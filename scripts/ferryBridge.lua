@@ -31,13 +31,9 @@ ferryBridge:overrideAsset({
 ferryBridge:registerAssetProcessor("models/ferryBridge.fbx", { DataType = "BUILDING_ASSET_PROCESSOR" })
 
 ferryBridge:registerPrefabComponent("models/ferryBridge.fbx/Prefab/StartPart/Door", { DataType = "COMP_GROUNDED" })
-ferryBridge:registerPrefabComponent("models/ferryBridge.fbx/Prefab/StartPart/DoorBlack", { DataType = "COMP_GROUNDED" })
 ferryBridge:registerPrefabComponent("models/ferryBridge.fbx/Prefab/StartPart/DoorRaft", { DataType = "COMP_GROUNDED", GroundToWater = true })
-ferryBridge:registerPrefabComponent("models/ferryBridge.fbx/Prefab/StartPart/DoorRaftBlack", { DataType = "COMP_GROUNDED", GroundToWater = true })
 ferryBridge:registerPrefabComponent("models/ferryBridge.fbx/Prefab/EndPart/Door.001", { DataType = "COMP_GROUNDED" })
-ferryBridge:registerPrefabComponent("models/ferryBridge.fbx/Prefab/EndPart/DoorBlack.001", { DataType = "COMP_GROUNDED" })
 ferryBridge:registerPrefabComponent("models/ferryBridge.fbx/Prefab/EndPart/DoorRaft.001", { DataType = "COMP_GROUNDED", GroundToWater = true })
-ferryBridge:registerPrefabComponent("models/ferryBridge.fbx/Prefab/EndPart/DoorRaftBlack.001", { DataType = "COMP_GROUNDED", GroundToWater = true })
 
 ferryBridge:registerPrefabComponent("models/ferryBridge.fbx/Prefab/RaftPart", { DataType = "COMP_GROUNDED", GroundToWater = true })
 
@@ -55,14 +51,12 @@ ferryBridge:registerAsset({
     Id = "FERRY_BRIDGE",
     Name = "FERRY_BRIDGE_NAME",
     Description = "FERRY_BRIDGE_DESC",
-    BuildingType = "TRANSPORTATION",
+    BuildingType = BUILDING_TYPE.TRANSPORTATION,
     AssetCoreBuildingPart = "FERRY_BRIDGE_CORE_PART",
-    BuildingPartSetList = {
-        {
-            Name = "FERRY_BRIDGE_RAFT_CATEGORY",
-            BuildingPartList = { "FERRY_BRIDGE_RAFT_PART" }
-        }
+    AssetBuildingPartList = {
+        "FERRY_BRIDGE_RAFT_PART"
     },
+    IsManuallyUnlocked = true,
     IsDestructible = true,
     IsEditable = true,
     IsClearTrees = true
@@ -94,14 +88,6 @@ ferryBridge:registerAsset({
     ConstructorData = {
         DataType = "BUILDING_CONSTRUCTOR_DEFAULT",
         CoreObjectPrefab = "PREFAB_FERRY_BRIDGE_CENTER_PART"
-    },
-    BuildingZone = {
-        ZoneEntryList = {
-            {
-                --Polygon = polygon.createRectangle({ 2, 6 }),
-                --Type = { DEFAULT = true }
-            }
-        }
     }
 })
 
@@ -129,6 +115,7 @@ ferryBridge:registerAsset({
     Id = "FERRY_BRIDGE_CORE_PART",
     Name = "FERRY_BRIDGE_CORE_PART_NAME",
     Description = "FERRY_BRIDGE_CORE_PART_DESC",
+    Category = BUILDING_PART_TYPE.CORE,
     ConstructorData = {
         DataType = "BUILDING_CONSTRUCTOR_BRIDGE",
         StartPart = "FERRY_BRIDGE_START_PART",
@@ -140,28 +127,43 @@ ferryBridge:registerAsset({
     BuildingZone = {
         ZoneEntryList = {}
     },
-    BuildingFunction = "FUNCTION_BRIDGE_ID"
+    BuildingFunction = "BUILDING_FUNCTION_FERRY_BRIDGE"
 })
 
 ferryBridge:registerAsset({
     DataType = "BUILDING_PART",
     Id = "FERRY_BRIDGE_RAFT_PART",
     Name = "FERRY_BRIDGE_RAFT_PART_NAME",
+    Category = BUILDING_PART_TYPE.DECORATION,
     IsShowInUi = true,
     ConstructorData = {
         DataType = "BUILDING_CONSTRUCTOR_DEFAULT",
         CoreObjectPrefab = "PREFAB_FERRY_BRIDGE_RAFT_PART"
-    },
-    BuildingZone = {
-        ZoneEntryList = {}
-    },
+    }
+})
+
+--[[------------------------------- UNLOCKABLES -------------------------------]]--
+
+ferryBridge:overrideAsset({
+    Id = "UNLOCKABLE_COMMON_BRIDGE_WOODEN",
+    ActionList = {
+        Action = "APPEND",
+        {
+            DataType = "GAME_ACTION_UNLOCK_BUILDING_LIST",
+            BuildingProgressData = {
+                AssetBuildingList = {
+                    "FERRY_BRIDGE"
+                }
+            }
+        }
+    }
 })
 
 --[[------------------------- JOBS & BUILDING FUNCTIONS -----------------------]]--
 
 ferryBridge:registerAsset({
     DataType = "BUILDING_FUNCTION_BRIDGE",
-    Id = "FUNCTION_BRIDGE_ID"
+    Id = "BUILDING_FUNCTION_FERRY_BRIDGE"
 })
 
 --[[----------------------------- BEHAVIOUR TREES -----------------------------]]--

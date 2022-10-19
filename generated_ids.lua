@@ -12,6 +12,7 @@ IdMap = {
 	{ "FERRY_BRIDGE_END_PART", "BUILDING_PART", "2d3cfc63-07e7-45f2-971b-2ad524f61e1e" },
 	{ "models/Transparent.png", "", "80467016-44bb-4c31-956d-67ffde41aa15" },
 	{ "FERRY_BRIDGE_CORE_PART", "BUILDING_PART", "deb7fb59-bb15-4adc-bf4a-893e7fd13b27" },
+	{ "BUILDING_FUNCTION_FERRY_BRIDGE", "BUILDING_FUNCTION", "aa137c80-183a-49e7-aae1-907227f3012c" },
 	{ "FUNCTION_BRIDGE_ID", "BUILDING_FUNCTION", "2aad4ab0-0183-499d-8e3a-0f308639a373" },
 	{ "models/roofTilesBeige.png", "", "79116c59-59e3-4831-aab1-c085f46ae2d4" },
 	{ "models/woodBrownWorn.png", "", "5111e4af-1c8e-40dd-a051-cc65a6a9ffef" },

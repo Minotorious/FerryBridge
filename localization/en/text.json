@@ -1,14 +1,17 @@
 {
 	"": {
         "FERRY_BRIDGE_NAME": "Ferry Bridge",
-        "FERRY_BRIDGE_DESC": "Villagers on this bridge use boats to cross to the other side",
+        "FERRY_BRIDGE_DESC": "Villagers use boats to cross to the other side",
         "FERRY_BRIDGE_CREATIVE_NAME": "Ferry Bridge Creative",
-        "FERRY_BRIDGE_CREATIVE_DESC": "Villagers on this bridge use boats to cross to the other side",
+        "FERRY_BRIDGE_CREATIVE_DESC": "Villagers use boats to cross to the other side",
+        "FERRY_BRIDGE_CORE_PART_NAME": "Ferry Bridge",
+        "FERRY_BRIDGE_CORE_PART_DESC": "Villagers use boats to cross to the other side",
         "FERRY_BRIDGE_START_PART_NAME": "Ferry Bridge",
         "FERRY_BRIDGE_END_PART_NAME": "Ferry Bridge",
+        "FERRY_BRIDGE_CREATIVE_CORE_PART_NAME": "Ferry Bridge",
+        "FERRY_BRIDGE_CREATIVE_CORE_PART_DESC": "Villagers use boats to cross to the other side",
         "FERRY_BRIDGE_CREATIVE_START_PART_NAME": "Ferry Bridge",
         "FERRY_BRIDGE_CREATIVE_END_PART_NAME": "Ferry Bridge",
-        
         "FERRY_BRIDGE_RAFT_CATEGORY": "Boat",
         "FERRY_BRIDGE_RAFT_PART_NAME": "Small Boat"
     }
